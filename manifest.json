@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "WaitMate",
+  "version": "1.0",
+  "description": "WaitMate replaces boring blank loading screens with witty AI thinking messages and a premium dark overlay.",
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
+}
